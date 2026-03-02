@@ -1,0 +1,137 @@
+{
+    "template_name":"Custom test template 106",
+    "permission_list":[
+            {
+                "key": 21,
+                "children": [
+                    {
+                        "key": 22,
+                        "children": [],
+                        "label": "Enquiry",
+                        "selected_permissions": 3
+                    }
+                ],
+                "label": "Resort",
+                "selected_permissions": 3
+            },
+            {
+                "key": 2,
+                "children": [
+                    {
+                        "key": 3,
+                        "children": [
+                            {
+                                "key": 4,
+                                "children": [],
+                                "label": "Country",
+                                "selected_permissions": 3
+                            },
+                            {
+                                "key": 5,
+                                "children": [],
+                                "label": "State",
+                                "selected_permissions": 3
+                            },
+                            {
+                                "key": 6,
+                                "children": [],
+                                "label": "City",
+                                "selected_permissions": 0
+                            },
+                            {
+                                "key": 7,
+                                "children": [],
+                                "label": "Currency",
+                                "selected_permissions": 0
+                            },
+                            {
+                                "key": 8,
+                                "children": [],
+                                "label": "Unit",
+                                "selected_permissions": 3
+                            }
+                        ],
+                        "label": "General Masters",
+                        "selected_permissions": 3
+                    },
+                    {
+                        "key": 9,
+                        "children": [
+                            {
+                                "key": 10,
+                                "children": [],
+                                "label": "Manage Payment Terms",
+                                "selected_permissions": 0
+                            },
+                            {
+                                "key": 11,
+                                "children": [],
+                                "label": "Manage Cancellations",
+                                "selected_permissions": 0
+                            },
+                            {
+                                "key": 18,
+                                "children": [],
+                                "label": "Manage Tax",
+                                "selected_permissions": 0
+                            },
+                            {
+                                "key": 20,
+                                "children": [],
+                                "label": "Room",
+                                "selected_permissions": 0
+                            }
+                        ],
+                        "label": "Accomodation Masters",
+                        "selected_permissions": 0
+                    },
+                    {
+                        "key": 12,
+                        "children": [
+                            {
+                                "key": 13,
+                                "children": [],
+                                "label": "Manage Tax Group",
+                                "selected_permissions": 0
+                            }
+                        ],
+                        "label": "Service Masters",
+                        "selected_permissions": 0
+                    },
+                    {
+                        "key": 15,
+                        "children": [
+                            {
+                                "key": 16,
+                                "children": [],
+                                "label": "Manage User Template",
+                                "selected_permissions": 3
+                            },
+                            {
+                                "key": 17,
+                                "children": [],
+                                "label": "Manage Users",
+                                "selected_permissions": 3
+                            },
+                            {
+                                "key": 19,
+                                "children": [],
+                                "label": "Manage Role",
+                                "selected_permissions": 3
+                            },
+                            {
+                                "key": 23,
+                                "children": [],
+                                "label": "Manage Employees",
+                                "selected_permissions": 3
+                            }
+                        ],
+                        "label": "User Masters",
+                        "selected_permissions": 3
+                    }
+                ],
+                "label": "Masters",
+                "selected_permissions": 3
+            }
+        ]
+}

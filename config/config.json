@@ -1,0 +1,5 @@
+{
+  "login_base_url": "https://qa-backend.drunni.com/hms_user_backend",
+  "gateway_base_url": "https://qa-backend.drunni.com/hms_gateway",
+  "authorization": "Basic aG1zdXNlcjowMDFobXMwMDE="
+}
