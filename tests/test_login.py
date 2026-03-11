@@ -1,9 +1,12 @@
 import json
+import pytest
 import allure
 from core.api_client import post
 from core.endpoints import LOGIN
 
 @allure.title("Positive Login Test")
+@pytest.mark.sanity
+# @pytest.mark.regression
 def test_login_success():
     with open("config/config.json") as c:
         config = json.load(c)
@@ -22,6 +25,7 @@ def test_login_success():
     assert "accessToken" in response.json()["data"]
 
 @allure.title("Negative Login Test - Invalid Password")
+@pytest.mark.sanity
 def test_login_invalid_password():
     with open("config/config.json") as c:
         config = json.load(c)

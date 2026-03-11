@@ -1,8 +1,9 @@
 import json
 import allure
+import pytest
 from core.api_client import get
 from core.endpoints import LOGOUT
-
+@pytest.mark.smoke
 @allure.title("Logout Test")
 def test_logout(gateway_headers):
     with open("config/config.json") as c:

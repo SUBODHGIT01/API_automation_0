@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>API Automation Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+
+<body class="container">
+
+<h2 class="mt-4">API Automation Dashboard</h2>
+
+<button class="btn btn-primary" onclick="runAll()">Run All</button>
+
+<button class="btn btn-warning" onclick="runMarker('smoke')">Smoke</button>
+
+<button class="btn btn-info" onclick="runMarker('sanity')">Sanity</button>
+
+<button class="btn btn-danger" onclick="runMarker('regression')">Regression</button>
+
+<hr>
+
+<table class="table table-bordered">
+
+<tr>
+
+<th>Test</th>
+<th>Run</th>
+<th>Delete</th>
+
+</tr>
+
+{% for test in tests %}
+
+<tr>
+
+<td>{{test}}</td>
+
+<td>
+<button class="btn btn-success"
+onclick="runTest('{{test}}')">
+Run
+</button>
+</td>
+
+<td>
+<button class="btn btn-danger"
+onclick="deleteApi('{{test}}')">
+Delete
+</button>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<hr>
+
+<h4>Add API</h4>
+
+<input id="api_name" placeholder="API name">
+
+<button onclick="addApi()" class="btn btn-primary">Add</button>
+
+<hr>
+
+<pre id="output"></pre>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>

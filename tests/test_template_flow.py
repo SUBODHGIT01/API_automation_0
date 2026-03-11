@@ -1,11 +1,12 @@
 import json
 import allure
 import random
+import pytest
 from core.api_client import post
 from core.endpoints import CREATE_TEMPLATE, DELETE_TEMPLATE
 
 from core.api_client import delete
-
+@pytest.mark.regression
 @allure.title("Create and Delete Template - Positive Flow")
 def test_create_and_delete_template(gateway_headers):
     with open("config/config.json") as c:
